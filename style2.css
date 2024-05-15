@@ -57,6 +57,19 @@ main{
     margin: 0 auto;
 }
 
+.banner{
+    z-index: 99999;
+    background: #010101;
+    border: 3px solid #FED018;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* --------------- DIV --------------- */
 
 .element{
@@ -85,6 +98,7 @@ main{
     transition: 100ms;
 }
 .box:hover{
+    z-index: 999;
     border: 5px solid #ffffff;
     transition: 100ms;
     zoom: 1;
@@ -129,22 +143,22 @@ header{
 }
 
 .btn-R{
-    background-color: #2c2c2c;
     background: none;
-    color: #818181;
+    color: #afafaf;
     float: right;
     margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 8px;
     font-size: 20px;
+    border-radius: 8px;
     transition: 170ms;
 }
 .btn-R:hover{
-    background-color: #3a3a3a;
+    background-color: #7e7e7e;
     color: #ffffff;
     transition: 170ms;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 /* --------------- FOOTER --------------- */
