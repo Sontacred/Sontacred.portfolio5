@@ -98,6 +98,7 @@ main{
     transition: 100ms;
 }
 .box:hover{
+    background: #7e7e7e;
     z-index: 999;
     border: 5px solid #ffffff;
     transition: 100ms;
