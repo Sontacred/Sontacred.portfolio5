@@ -19,14 +19,6 @@ h1{
     top: 0;
 }
 
-p{
-    background-color: #FF5757;
-    position: absolute;
-    margin-left: 90px;
-    margin-top: 200px;
-    margin-top: 90px;
-}
-
 img{
     border-radius: 40px;
     z-index: -1;
@@ -62,16 +54,27 @@ main{
 }
 
 .banner{
+    opacity: 0%;
     z-index: 99999;
-    background: #010101;
-    border: 3px solid #FED018;
+    position: fixed;
+    background: #FED018;
+    color: #000000;
     text-align: center;
-    font-size: 15px;
-    padding: 15px;
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    width: 98.5%;
+    height: 60px;
     margin: 0 auto;
+    margin-bottom: 10px;
+    bottom: 0;
+    border-radius: 100px;
+    align-items: center;
+    transition: 170ms;
+}
+.banner:hover{
+    opacity: 100%;
+    transition: 170ms;
 }
 
 /* --------------- DIV --------------- */
@@ -138,13 +141,13 @@ header{
 
 .btn-L{
     background: none;
-    background: none;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
     font-size: 30px;
-    border-radius: 3px;
+    border-radius: 8px;
     transition: 170ms;
 }
 .btn-L:hover{

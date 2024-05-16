@@ -51,16 +51,27 @@ main{
 }
 
 .banner{
+    opacity: 0%;
     z-index: 99999;
-    background: #010101;
-    border: 3px solid #FED018;
+    position: fixed;
+    background: #FED018;
+    color: #000000;
     text-align: center;
-    font-size: 15px;
-    padding: 15px;
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    width: 98.5%;
+    height: 60px;
     margin: 0 auto;
+    margin-bottom: 10px;
+    bottom: 0;
+    border-radius: 100px;
+    align-items: center;
+    transition: 170ms;
+}
+.banner:hover{
+    opacity: 100%;
+    transition: 170ms;
 }
 
 /* --------------- DIV --------------- */
