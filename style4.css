@@ -1,32 +1,37 @@
 *{
     padding: 0;
     margin: 0;
+    color: #ffffff;
     box-sizing: border-box;
     font-family: arial, sans-serif;
-    color: #ffffff;
-    background-image: url("img/image\ 12.png"); 
+    background: #000000; 
     background-size: cover;
     background-position: center;
     list-style: none;
     text-decoration: none;
-    cursor: crosshair;
 }
 
 h1{
     position: absolute;
     background: none;
-    margin: 50px;
+    margin: 10px;
+    font-size: 20px;
     bottom: 0;
 }
 
-p{
-    position: absolute;
+h2{
     background: none;
+    writing-mode: vertical-lr;
+    margin: 10px;
 }
 
 img{
     border-radius: 40px;
     z-index: -1;
+}
+
+.active{
+    text-decoration: underline;
 }
 
 /* --------------- CONTENT --------------- */
@@ -40,20 +45,53 @@ body{
     font-size: 30px;
 }
 
-main{
+
+.main{
     box-align: center;
     position: relative;
-    border: 3px solid #4b4b4b;
+    background: none;
     font-size: 20px;
     min-height: 300px;
     height: fit-content;
-    max-width: 1300px;
-    margin: 5px;
-    margin-bottom: 15px;
+    max-width: 85%;
     padding: 10px;
-    border-radius: 50px;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px auto;
+}
+
+
+
+.element{
+    background: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    right: 0;
+    border-radius: 10px;
+}
+
+.box{
+    position: relative;
+    background: none;
+    width: fit-content;
+    height: 200px;
+    margin: 5px;
+    right: 0;
+    border-radius: 40px;
+    transition: 100ms;
+}
+.box:hover{
+    background: #7e7e7e;
+    transition: 100ms;
+    zoom: 1;
+    transform: scale(95%);
 }
 
 .banner{
@@ -82,78 +120,58 @@ main{
 
 /* --------------- DIV --------------- */
 
-.element{
-    position: relative;
-    background: none;
-    width: 100%;
-    height: 500px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    right: 0;
-    border-radius: 40px;
-    transition: 370ms;
+.element-H{
     z-index: 3;
-}
-
-.boutons{
-    position: relative;
-    display: flex;
-    background: #cacaca;
+    background: none;
+    font-size: 80px;
     width: 100%;
-    height: 150px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    right: 0;
-    border-radius: 40px;
-    transition: 370ms;
-    opacity: 60%;
-    justify-content: space-between;
+    height: fit-content;
+    margin: 90px;
 }
 
-.github:hover{
-    zoom: 1;
-    background-color: #4078c0;
-    transition: 370ms;
-    transform: scale(98%);
-    opacity: 100%;
+.element-T{
+    z-index: 3;
+    background: none;
+    text-align: justify;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
 }
-.reddit:hover{
-    zoom: 1;
-    background-color: #ff8154;
-    transition: 370ms;
-    transform: scale(98%);
-    opacity: 100%;
+
+.btn-M{
+    background: none;
+    color: #afafaf;
+    border: 3px solid #7E7E7E;
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 170ms;
 }
-.deviantart:hover{
-    zoom: 1;
-    background-color: #4ee781;
-    transition: 370ms;
-    transform: scale(98%);
-    opacity: 100%;
+.btn-M:hover:hover{
+    background-color: #7e7e7e;
+    color: #ffffff;
+    transition: 170ms;
+    border-radius: 8px;
 }
-.threads:hover{
-    zoom: 1;
-    background-color: #775ee9;
-    transition: 370ms;
-    transform: scale(98%);
-    opacity: 100%;
-}
+
 /* --------------- HEADER --------------- */
 
 header{
-    background: none;
-    background: none;
     display: block;
     font-size: 30px;
     padding: 10px;
     border-radius: 8px;
-    max-width: 1300px;
     min-width: 750px;
+    height: 30px;
     margin: 16px auto;
 }
 
 .btn-L{
-    background-color: #2c2c2c;
+    color: #afafaf;
     background: none;
     margin-top: 20px;
     margin-left: 10px;
